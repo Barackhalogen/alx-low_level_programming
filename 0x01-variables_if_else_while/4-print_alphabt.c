@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
-* main - Oya start to dey code boy
+* main - kindly know that this code works
 * Description: using the main function
 * this program prints the alphabet in lowercase
+* Return: 0
 */
 int main(void)
 {
