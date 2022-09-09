@@ -1,11 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
-* Main - Starts the coding from here
-* Description: prints the alphabet in lowercase, and then in uppercase
-* Return: Always 0 (Success)
+* main - Start the coding boy
+* Description: using the main function
+* this program prints the alphabet in lowercase, and then in uppercase
+* Return: 0
 */
 int main(void)
 {
