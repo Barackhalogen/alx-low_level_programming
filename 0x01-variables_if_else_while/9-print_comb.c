@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
-* main - Let the coding begin
-* Description: Using the main function
-* this program prints all possible combinations of single-digit numbers.
+* main - Coding starts here
+* Description: using the main function
+* this program prints all possible combinations of single-digit numbers
 * Return: 0
 */
 int main(void)
 {
 int c;
-for (c = 0; c <= 9; c++)
+for (c = '0'; c <= '9'; c++)
 {
 putchar(c);
-if (c != 9)
+if (c !='9')
 {
 putchar(',');
 putchar(' ');
