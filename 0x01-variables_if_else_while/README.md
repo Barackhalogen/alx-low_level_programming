@@ -7,3 +7,4 @@ a program that prints the alphabet in lowercase
 7. a program that prints the lowercase alphabet in reverse
 8. a program that prints all the numbers of base 16 in lowercase
 9.  a program that prints all possible combinations of single-digit numbers.
+10 a program that prints all possible different combinations of two digits
