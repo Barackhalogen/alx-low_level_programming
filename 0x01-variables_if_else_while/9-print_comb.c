@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - let the coding begin here
+* main - this coding is sweet
 * Description: using the main function
 * this program prints all possible combinations of single-digit numbers
 * Return: 0
@@ -13,8 +13,9 @@ for (c = '0'; c <= '9'; c++)
 putchar(c);
 if (c != '9')
 {
-putchar (',');
-putchar (' ');
+putchar(',');
+putchar(' ');
+}
 }
 putchar('\n');
 return (0);
