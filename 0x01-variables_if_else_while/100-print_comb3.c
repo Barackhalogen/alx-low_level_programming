@@ -1,21 +1,25 @@
 #include <stdio.h>
 /**
-* main - let's keep coding
+* main - this coding is sweet
 * Description: using the main function
 * this program prints all possible different combinations of two digits
 * Return: 0
 */
 int main(void)
+
 {
-int d;
-for (d = 0; d < 100; d++)
+int i;
+int j;
+for (i = 48; i < 57; i++)
 {
-putchar((d / 10) + '0');
-putchar((d % 10) + '0');
-if (d != 99)
+for (j = i + 1; j <= 57; j++)
 {
-putchar(',');
-putchar(' ');
+putchar(i);
+putchar(j);
+if (j == 57 && i == 56)
+break;
+putchar(44);
+putchar(32);
 }
 }
 putchar('\n');
