@@ -9,3 +9,4 @@ a program that prints the alphabet in lowercase
 9.  a program that prints all possible combinations of single-digit numbers.
 10 a program that prints all possible different combinations of two digits
 11. a program that prints all possible different combinations of three digits
+12. a program that prints all possible combinations of two two-digit numbers.
