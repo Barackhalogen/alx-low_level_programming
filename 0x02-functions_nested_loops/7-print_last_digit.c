@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-* main - I'm too loving this program
-* Description: using the main function and 
-* print_last_digit - Prints the last dogit of any value
+* print_last_digit - this function prints the last digit of a number
+* @n: this is an integer, a real number
 * Return: Last value of digit
 */
 int print_last_digit(int n)
