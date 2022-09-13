@@ -1,10 +1,8 @@
 #include "main.h"
 /**
-* main - This is big, check out
-* Description: using the main function
-* this program prints ASCII characters
-* _isalpha - Check for alphabet characters
-* Return: 0 if not an alphabet, 1 if an alphabet
+* _isalpha - this function Check for alphabet characters
+* @c: This is an ASCII character
+* Return: 0 if not an alphabet, else 1 if alphabet
 */
 int _isalpha(int c)
 {
