@@ -1,13 +1,14 @@
 #include "main.h"
 /**
-* main - I believe I can code
-* description: Using the main function
-* this program prints a function that checks for lowercase character
-* Return: 1 if lowercase, else 0
+* main - Coding is an art
+* Description: using the main function
+* this program prints lowercase ASCII character
+* function _islower - Check for lowercase ASCII characters
+* Return: 0 if not lowercase, 1 if lowercase
 */
 int _islower(int c)
 {
-if ((c >= 1) && (c <= 26))
+if ((c >= 97) && (c <= 122))
 {
 return (1);
 }
