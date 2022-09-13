@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-* main - Hello, are you happy while coding
-* Description: using the main function
-* this program prints 10 times the alphabet, in lowercase
+* print_alphabet_x10 - a sweet function I jam you
+* description: Prints a-z in lowercase 10 times
 * Return: Nothing (Null, void)
 */
 void print_alphabet_x10(void)
