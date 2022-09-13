@@ -1,9 +1,8 @@
 #include "main.h"
 /**
-* main - coding sweet o
-* description: using the main function
-* this program prints the alphabet, in lowercase
-* Return: 0
+* print_alphabet - this is a function
+* desription: Prints a-z in lowercase
+* Return: returns nothing or void
 */
 void print_alphabet(void)
 {
@@ -11,8 +10,7 @@ char alphabet = 'a';
 while (alphabet <= 'z')
 {
 _putchar(alphabet);
-alphabet++
+alphabet++;
 }
 _putchar('\n');
-return (0);
 }
