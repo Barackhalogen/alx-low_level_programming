@@ -1,9 +1,7 @@
 #include "main.h"
 /**
-* main - Coding is an art
-* Description: using the main function
-* this program prints lowercase ASCII character
-* function _islower - Check for lowercase ASCII characters
+*  _islower - function Check for lowercase ASCII characters
+* @c: This is an ASCII character
 * Return: 0 if not lowercase, 1 if lowercase
 */
 int _islower(int c)
