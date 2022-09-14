@@ -1,7 +1,6 @@
 #include "main.h"
 /**
-* main - This file must test that the function
-* positive_or_negative(): prints positive or negative number and
+* main - Tests function that prints positive or negative number
 * Return: 0
 */
 int main(void)
