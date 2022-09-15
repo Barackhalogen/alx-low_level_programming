@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
 * print_line - this function prints a straight line
 * @n: is an integer, a parameter
@@ -8,7 +7,7 @@
 */
 void print_line(int n)
 {
-whine (n-- > 0)
+while (n-- > 0)
 {
 _putchar('_');
 }
