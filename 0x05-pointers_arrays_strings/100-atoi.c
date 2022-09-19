@@ -31,5 +31,5 @@ return (INT_MIN);
 }
 base = 10 * base + (str[i++] - '0');
 }
-return (base * sign);
+return (base *sign);
 }
