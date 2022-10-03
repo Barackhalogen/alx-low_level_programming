@@ -38,6 +38,7 @@ char *str_concat(char *s1, char *s2)
 int _strlen(const char *s)
 {
 	int i = 0;
+	
 	for (; s[i] != '\0'; i++)
 		;
 	return (i);
