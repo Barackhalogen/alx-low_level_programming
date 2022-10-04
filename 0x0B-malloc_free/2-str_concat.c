@@ -16,7 +16,6 @@ char *str_concat(char *s1, char *s2)
 {
 	int i = 0, j = 0;
 	char *output;
-	
 	if (s1 == NULL)
 	s1 = "\0";
 	if (s2 == NULL)
@@ -41,8 +40,7 @@ char *str_concat(char *s1, char *s2)
 
 int _strlen(const char *s)
 {
-	int i = 0;
-	
+	int i = 0;	
 	for (; s[i] != '\0'; i++)
 		;
 	return (i);
