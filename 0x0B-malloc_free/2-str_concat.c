@@ -16,10 +16,10 @@ char *str_concat(char *s1, char *s2)
 {
 	int i = 0, j = 0;
 	char *output;
-	if (s1 == NULL)
-	s1 = "\0";
-	if (s2 == NULL)
-	s2 = "\0";
+		if (s1 == NULL)
+		s1 = "\0";
+		if (s2 == NULL)
+		s2 = "\0";
 	i = _strlen(s1);
 	j = _strlen(s2);
 
@@ -37,11 +37,9 @@ char *str_concat(char *s1, char *s2)
  * @s: the string of which length is required
  * Return: length of the string
  */
-
 int _strlen(const char *s)
 {
 	int i = 0;	
-	for (; s[i] != '\0'; i++)
-		;
+		for (; s[i] != '\0'; i++);
 	return (i);
 }
