@@ -2,47 +2,48 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+
+int _strlen(const char *s);
+
 /**
-* str_concat - concatenates two strings
-* @s1: pointer to the first string
-* @s2: pointer to the second string
-* Return: pointer to newly allocated memory which has s1,
-* s2 and null byte, NULL if allocation fails
-*/
+ * str_concat - concatenates two strings
+ * @s1: pointer to the first string
+ * @s2: pointer to the second string
+ * Return: pointer to the concatenated string
+ */
+
 char *str_concat(char *s1, char *s2)
 {
-unsigned int len1, len2, size, i, j;
-char *nstr;
+	int i = 0, j = 0;
+	char *output;
+	
+	if (s1 == NULL)
+	s1 = "\0";
+	if (s2 == NULL)
+	s2 = "\0";
+	i = _strlen(s1);
+	j = _strlen(s2);
 
-if (s1 == NULL)
-s1 = "";
-if (s2 == NULL)
-s2 = "";
+	output = malloc((i + j) * sizeof(*s1) + 1);
 
-len1 = 0;
-while (s1[len1] != '\0')
-	len1++;
-len2 = 0;
-while (s2[len2] != '\0')
-	len2++;
-
-nstr = malloc((sizeof(char) * size) + 1);
-/*check if malloc was successful*/
-if (nstr == NULL)
+	if (output == 0)
 	return (NULL);
+	strcat(output, s1);
+	strcat(output, s2);
+	return (output);
+}
 
-i = 0;
-while (i < len1)
+/**
+ * _strlen - gets the length of a string
+ * @s: the string of which length is required
+ * Return: length of the string
+ */
+
+int _strlen(const char *s)
 {
-	nstr[i] = s1[i];
-	i++;
-}
-j = 0;
-while (i <= size)
-{
-	nstr[i] = s2[j];
-	i++;
-	j++;
-}
-return (nstr);
+	int i = 0;
+	
+	for (; s[i] != '\0'; i++)
+		;
+	return (i);
 }
