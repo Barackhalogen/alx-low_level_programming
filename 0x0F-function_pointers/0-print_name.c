@@ -1,23 +1,15 @@
-#include "variadic_functions.h"
+#include "function_pointers.h"
+#include <stddef.h>
 
 /**
-* sum_them_all - this function adds all its args together
-* @n: This is the first argument, an integer
-* Return: An integer which is the sum
+* print_name - this function prints a name
+* @name: This is the name to be printed, a char
+* @f: This is a pointer to a func
+* Return: Null Void
 */
-int sum_them_all(const unsigned int n, ...)
+void print_name(char *name, void (*f)(char *))
 {
-int sum = 0;
-unsigned int i;
-va_list ap;
-
-if (n == 0)
-return (0);
-
-va_start(ap, n);
-
-for (i = 0; i < n; i++)
-sum += va_arg(ap, int);
-va_end(ap);
-return (sum);
+if (name == NULL || f == NULL)
+return;
+f(name);
 }
